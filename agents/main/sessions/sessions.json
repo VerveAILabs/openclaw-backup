@@ -10,7 +10,7 @@
       "accountId": "default"
     },
     "sessionId": "22a2a42e-6f87-47d6-958d-e10a0a8f4361",
-    "updatedAt": 1770990908397,
+    "updatedAt": 1770991919928,
     "deliveryContext": {
       "channel": "telegram",
       "to": "telegram:8148859805",
@@ -104,7 +104,7 @@
     "contextTokens": 400000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1770990592744,
+      "generatedAt": 1770991814015,
       "sessionId": "22a2a42e-6f87-47d6-958d-e10a0a8f4361",
       "sessionKey": "agent:main:main",
       "provider": "openai",
@@ -352,8 +352,8 @@
         ]
       }
     },
-    "inputTokens": 29646,
-    "outputTokens": 91,
-    "totalTokens": 29646
+    "inputTokens": 285,
+    "outputTokens": 168,
+    "totalTokens": 93213
   }
 }
