@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.2.6-3",
+    "lastTouchedAt": "2026-02-09T19:45:48.881Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-02-09T19:45:48.867Z",
+    "lastRunVersion": "2026.2.6-3",
+    "lastRunCommand": "configure",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "google:default": {
+        "provider": "google",
+        "mode": "api_key"
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "openai/gpt-5.1-codex",
+        "fallbacks": [
+          "openai/gpt-5.2",
+          "google/gemini-3-pro-preview",
+          "openrouter/openai/gpt-5.2-chat",
+          "openrouter/openai/gpt-5.1-codex-mini"
+        ]
+      },
+      "models": {
+        "openai/gpt-5.1-codex": {
+          "alias": "GPT"
+        },
+        "openai/gpt-5.2": {
+          "alias": "gpt"
+        },
+        "google/gemini-3-pro-preview": {
+          "alias": "gemini"
+        },
+        "openrouter/openai/gpt-5.2-chat": {},
+        "openrouter/openai/gpt-5.1-codex-mini": {}
+      },
+      "workspace": "/home/ouss_ech/.openclaw/workspace",
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    }
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto"
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "pairing",
+      "botToken": "8499937729:AAF5VnV7TpSqd3e8D1IHFZTbPOBrVaxVxes",
+      "groupPolicy": "allowlist",
+      "streamMode": "partial"
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "3a7f06e9361f9268c24e8c513b1ac2df1ee5da3c8db3a9a2"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "skills": {
+    "install": {
+      "nodeManager": "pnpm"
+    }
+  },
+  "plugins": {
+    "entries": {
+      "telegram": {
+        "enabled": true
+      }
+    }
+  }
+}

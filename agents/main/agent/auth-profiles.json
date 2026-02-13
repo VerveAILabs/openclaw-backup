@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "profiles": {
+    "google:default": {
+      "type": "api_key",
+      "provider": "google",
+      "key": "AIzaSyAPr2a7-OMTi0ZTa_bfKEE3_h69tYpDSlQ"
+    }
+  },
+  "usageStats": {
+    "google:default": {
+      "errorCount": 3,
+      "failureCounts": {
+        "rate_limit": 3
+      },
+      "lastFailureAt": 1770666395923,
+      "cooldownUntil": 1770667895923
+    }
+  }
+}
