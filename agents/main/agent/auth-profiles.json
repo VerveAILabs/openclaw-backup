@@ -4,7 +4,7 @@
     "google:default": {
       "type": "api_key",
       "provider": "google",
-      "key": "AIzaSyAPr2a7-OMTi0ZTa_bfKEE3_h69tYpDSlQ"
+      "key": "REDACTED_GOOGLE_API_KEY"
     }
   },
   "usageStats": {
